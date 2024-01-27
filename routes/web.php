@@ -17,7 +17,8 @@ Route::get('/', function () {
 
     $data = [
         'comics' => config('comics'),
-        'shop' => config('shop')
+        'shop' => config('shop'),
+        'info' => config('info')
     ];
 
     // dd($data);
