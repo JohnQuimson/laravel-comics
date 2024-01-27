@@ -57,31 +57,71 @@ body {
         color: #ffff;
         padding: 20px 0;
 
-        .cont-img {
-            height: 200px;
-            width: 200px;
-            overflow: hidden;
-            margin: 50px 0 20px;
+        .comics {
+            .cont-img {
+                height: 200px;
+                width: 200px;
+                overflow: hidden;
+                margin: 50px 0 20px;
 
-            img {
-                width: 100%;
-                object-fit: contain;
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            h5 {
+                font-size: 16px;
+            }
+
+            button {
+                background-color: #0282f9;
+                color: white;
+                padding: 5px 50px;
+                border: none;
+                text-transform: uppercase;
+                font-weight: 500;
+                margin-bottom: 20px;
+                cursor: pointer;
             }
         }
 
-        h5 {
-            font-size: 16px;
-        }
-
-        button {
+        .shop {
+            height: 17vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             background-color: #0282f9;
-            color: white;
-            padding: 5px 50px;
-            border: none;
-            text-transform: uppercase;
-            font-weight: 500;
-            margin-bottom: 20px;
-            cursor: pointer;
+            padding: 0 200px;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                list-style-type: none;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .cont-shop-icons {
+                        height: 60px;
+
+                        img {
+                            height: 100%;
+                            object-fit: contain;
+                            aspect-ratio: 1;
+                        }
+                    }
+
+                    a {
+                        color: #fffdfe;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        letter-spacing: 0.5px;
+                    }
+                }
+            }
         }
     }
 }

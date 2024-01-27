@@ -18,7 +18,8 @@
 
   {{-- main --}}
   <main>
-    <section class="container d-flex flex-column align-items-center">
+    {{-- films --}}
+    <section class="comics container d-flex flex-column align-items-center">
       <ul class="row">
       @foreach ($comics as $comic)
           <li class="col-2">
@@ -33,6 +34,10 @@
       </ul>
       <button class="text-uppercase">load more</button>
     </section>
+
+    {{-- Shop --}}
+  @include('shared.shop')
+    
   </main>
 
   {{-- footer --}}
