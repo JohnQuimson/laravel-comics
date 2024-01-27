@@ -13,10 +13,29 @@
   @vite('resources/js/app.js')
 </head>
 <body>
+  {{-- header --}}
   @include('shared.header')
-  <main>
 
+  {{-- main --}}
+  <main>
+    <section class="container d-flex flex-column align-items-center">
+      <ul class="row">
+      @foreach ($comics as $comic)
+          <li class="col-2">
+            <div class="cont-img">
+               <img src="{{ $comic['thumb'] }}" alt="thumbimg">
+            </div>
+            <h5 class="text-uppercase">
+              {{ $comic['title'] }}
+            </h5>
+          </li>
+      @endforeach
+      </ul>
+      <button class="text-uppercase">load more</button>
+    </section>
   </main>
+
+  {{-- footer --}}
   @include('shared.footer')
   
   {{-- <img src="{{ Vite::asset('resources/img/logo.png') }}" alt=""> --}}
