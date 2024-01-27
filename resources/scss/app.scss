@@ -7,6 +7,11 @@ body {
     header {
         .header-top {
             background-color: #0282f9;
+            font-size: 12px;
+
+            ul {
+                padding: 5px 0;
+            }
         }
     }
 }
