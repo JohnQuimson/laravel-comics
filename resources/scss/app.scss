@@ -35,6 +35,33 @@ body {
                     cursor: pointer;
                 }
             }
+            .search-container {
+                display: flex;
+                align-items: center;
+                border-bottom: 3px solid #0282f9;
+                overflow: hidden;
+            }
+
+            .search-input {
+                flex: 1;
+                padding: 10px;
+                border: none;
+                outline: none;
+                background: transparent;
+                text-align: end;
+                color: #383838;
+            }
+
+            .search-button {
+                background-color: #ffff;
+                color: #383838;
+                border: none;
+                cursor: pointer;
+            }
+
+            .search-button i {
+                margin-right: 5px;
+            }
         }
 
         .jumbotron {
@@ -92,7 +119,6 @@ body {
             flex-direction: column;
             justify-content: center;
             background-color: #0282f9;
-            padding: 0 200px;
 
             ul {
                 display: flex;
@@ -125,52 +151,79 @@ body {
         }
     }
 
-    .footer-top {
-        background-image: url(../img/footer-bg.jpg);
-        height: 42vh;
-        color: #fffdfe;
-        overflow: hidden;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 200px;
+    footer {
+        background-color: #303030;
 
-        .cont-left {
-            padding: 20px 0;
+        .footer-top {
+            background-image: url(../img/footer-bg.jpg);
+            height: 42vh;
+            color: #fffdfe;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 200px;
 
-            .cont-list {
-                display: flex;
-                gap: 30px;
+            .cont-left {
+                padding: 20px 0;
 
-                ul {
-                    list-style-type: none;
-                    letter-spacing: 0.5px;
-                    margin-bottom: 20px;
-                    padding: 0;
+                .cont-list {
+                    display: flex;
+                    gap: 30px;
 
-                    li {
-                        &:first-child {
-                            margin-bottom: 12px;
-                        }
+                    ul {
+                        list-style-type: none;
+                        letter-spacing: 0.5px;
+                        margin-bottom: 20px;
+                        padding: 0;
 
-                        &:first-child a {
-                            color: #fffdfe;
-                            text-transform: uppercase;
-                            font-size: 18px;
-                        }
+                        li {
+                            &:first-child {
+                                margin-bottom: 12px;
+                            }
 
-                        a {
-                            color: #959595;
-                            text-decoration: none;
-                            font-size: 12px;
+                            &:first-child a {
+                                color: #fffdfe;
+                                text-transform: uppercase;
+                                font-size: 18px;
+                            }
+
+                            a {
+                                color: #959595;
+                                text-decoration: none;
+                                font-size: 12px;
+                            }
                         }
                     }
                 }
+                p {
+                    color: #959595;
+                    text-decoration: none;
+                    font-size: 12px;
+                }
             }
-            p {
-                color: #959595;
-                text-decoration: none;
-                font-size: 12px;
+        }
+
+        .footer-bottom {
+            padding: 30px 0;
+
+            .footer-sx {
+                button {
+                    background-color: transparent;
+                    border: 2px solid #0282f9;
+                    text-transform: uppercase;
+                    color: #ffff;
+                    padding: 10px 30px;
+                    font-weight: 600;
+                }
+            }
+
+            .footer-dx {
+                span {
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
             }
         }
     }

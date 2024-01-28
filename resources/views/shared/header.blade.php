@@ -44,10 +44,10 @@
       <li>
         <a href="#">shop</a>
       </li>
-      <li>
-        <input type="search" placeholder="Search">
-        <button>
-          <i class="fa-solid fa-magnifying-glass"></i>
+      <li class="search-container">
+        <input type="text" class="search-input" placeholder="Search">
+        <button class="search-button">
+          <i class="fas fa-search"></i>
         </button>
       </li>
     </ul>

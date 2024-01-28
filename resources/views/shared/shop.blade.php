@@ -1,5 +1,5 @@
 <section class="shop">
-      <ul>
+      <ul class="container">
         @foreach ($shop as $product)
             <li>
               <div class="cont-shop-icons">
