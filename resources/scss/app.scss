@@ -85,6 +85,8 @@ body {
         padding: 20px 0 0 0;
 
         .comics {
+            position: relative;
+
             .cont-img {
                 height: 200px;
                 width: 200px;
@@ -110,6 +112,14 @@ body {
                 font-weight: 500;
                 margin-bottom: 20px;
                 cursor: pointer;
+            }
+
+            .current-series {
+                position: absolute;
+                left: 0;
+                top: -40px;
+                font-size: 25px;
+                padding: 5px 30px;
             }
         }
 

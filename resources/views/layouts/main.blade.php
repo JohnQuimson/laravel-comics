@@ -33,6 +33,7 @@
       @endforeach
       </ul>
       <button class="text-uppercase">load more</button>
+      <button class="current-series">CURRENT SERIES</button>
     </section>
 
     {{-- Shop --}}
